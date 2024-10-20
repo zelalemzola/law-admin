@@ -150,7 +150,7 @@ const Blogs = () => {
 
                     </div>
                      <label className='text-primary text-lg font-bold'>Date</label>
-                    <Input
+                    <input
                       type="date"
                       name="date"
                       value={createFormState.date}
@@ -249,12 +249,12 @@ const Blogs = () => {
 
                     </div>
                    <label className='text-primary text-lg font-bold'>Edit Date</label>
-                    <Input
+                    <input
                       type="date"
                       name="date"
                       value={updateFormState.date}
                       onChange={(e) => handleChange(e, true)}
-                      className='w-full'
+                      className='w-fit'
                     />
                    <label className='text-primary text-lg font-bold'>Edit Content</label>
                     <textarea
