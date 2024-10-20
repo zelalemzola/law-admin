@@ -163,8 +163,8 @@ const Blogs = () => {
                       onChange={(e) => handleChange(e)}
                       placeholder="Blog Content"
                       required
-                      className='w-full '
-                      rows={45}
+                      className='w-full h-48'
+                      
                     />
                   </div>
                 </ScrollArea> 
@@ -195,7 +195,6 @@ const Blogs = () => {
             <thead>
               <tr>
                 <th className="border p-2">Title</th>
-                
                 <th className="border p-2">Date</th>
                 <th className="border p-2">Actions</th>
               </tr>
@@ -262,7 +261,7 @@ const Blogs = () => {
                       onChange={(e) => handleChange(e, true)}
                       placeholder="Blog Content"
                       required
-                      className='w-full h-24'
+                      className='w-full h-48'
                     />
                   </div>
                 </ScrollArea>
