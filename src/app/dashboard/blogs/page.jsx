@@ -162,8 +162,8 @@ const Blogs = () => {
                       className='w-full h-24'
                     />
                   </div>
-                </ScrollArea>
-                <Button type="submit" className='w-1/3 bg-primary'>Submit</Button>
+                </ScrollArea> 
+                <Button type="submit" className='w-1/3 bg-green-800  text-white'>Submit</Button>
                 {errors.length > 0 && <p className='text-red-600'>{errors.join(', ')}</p>}
               </div>
             </form>
@@ -199,8 +199,8 @@ const Blogs = () => {
                  
                   <td className="border p-2">{new Date(blog.date).toLocaleDateString()}</td>
                   <td className="border p-2 flex gap-2">
-                    <Button onClick={() => handleEdit(blog)}>Edit</Button>
-                    <Button onClick={() => handleDelete(blog._id)}>Delete</Button>
+                    <Button onClick={() => handleEdit(blog)} className='bg-orange-400 text-white'>Edit</Button>
+                    <Button onClick={() => handleDelete(blog._id)}  className='bg-red-400 text-white'>Delete</Button>
                   </td>
                 </tr>
               ))}
