@@ -192,7 +192,7 @@ const Blogs = () => {
         <h1 className="text-3xl mb-5">Blogs</h1>
         <div className="overflow-x-auto w-full mt-[10%]">
           <table className="table-auto border-collapse w-full ">
-            <thead>
+            <thead className='bg-primary text-white'>
               <tr>
                 <th className="border p-2">Title</th>
                 <th className="border p-2">Date</th>
