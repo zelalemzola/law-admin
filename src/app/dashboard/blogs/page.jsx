@@ -127,7 +127,9 @@ const Blogs = () => {
               <div className="flex flex-col items-start gap-3">
                 <ScrollArea className='h-full  w-full bg-white px-4 '>
                   <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
+                    <label className='text-primary text-lg font-bold'>Title</label>
                     <Input name="title" value={createFormState.title} onChange={(e) => handleChange(e)} placeholder="Blog Title" required className='w-full' />
+                    
                     <div className='flex items-center justify-start gap-2'>
                       <h1 className='text-primary font-bold'>Upload Blog&lsquo;s Thumbnail</h1>
                       <UploadButton
@@ -146,6 +148,7 @@ const Blogs = () => {
                       />
                     </div>
                     {createFormState.thumbnailUrl && <Image src={createFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
+                     <label className='text-primary text-lg font-bold'>Date</label>
                     <Input
                       type="date"
                       name="date"
@@ -153,13 +156,14 @@ const Blogs = () => {
                       onChange={(e) => handleChange(e)}
                       className='w-fit'
                     />
+                     <label className='text-primary text-lg font-bold'>Content</label>
                     <textarea
                       name="content"
                       value={createFormState.content}
                       onChange={(e) => handleChange(e)}
                       placeholder="Blog Content"
                       required
-                      className='w-full h-24'
+                      className='w-full '
                     />
                   </div>
                 </ScrollArea> 
@@ -172,13 +176,16 @@ const Blogs = () => {
             </DrawerClose>
           </DrawerContent>
         </Drawer>
-        <Input
+        <div className='flex items-center gap-2 border border-primary p-2 rounded-lg w-[30%]'>
+          <Search className='text-primary font-bold'/>
+        <input
           type="text"
           placeholder="Search Blogs"
           value={searchQuery}
           onChange={handleSearch}
-          className="w-1/3 rounded-full"
+          className="outline-none border-none w-full"
         />
+        </div>
       </div>
       <div className="flex flex-col items-start justify-start  mx-5">
         <h1 className="text-3xl mb-5">Blogs</h1>
