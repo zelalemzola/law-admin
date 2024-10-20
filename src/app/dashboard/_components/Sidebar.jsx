@@ -1,5 +1,5 @@
 import { Separator } from '@radix-ui/react-dropdown-menu'
-import { Blocks, BriefcaseBusiness, Handshake } from 'lucide-react'
+import { Blocks, BriefcaseBusiness, Handshake, ScrollText } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -23,6 +23,11 @@ const Sidebar = () => {
         <div className='border-b border-b-primary p-3'>
         <Link href='/dashboard/partners' className='flex items-center justify-start gap-2 top-1 text-primary hover:text-white hover:bg-primary p-3 rounded-lg'>
           <Handshake /><h1 className='text-bold'>Partners</h1>
+        </Link>
+        </div>
+        <div className='border-b border-b-primary p-3'>
+        <Link href='/dashboard/blogs' className='flex items-center justify-start gap-2 top-1 text-primary hover:text-white hover:bg-primary p-3 rounded-lg'>
+           <ScrollText /><h1 className='text-bold'>Blogs</h1>
         </Link>
         </div>
     </div>

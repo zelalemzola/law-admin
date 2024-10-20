@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Blocks, Handshake, UsersRound } from 'lucide-react'
+import { Blocks, Handshake, ScrollText, UsersRound } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -20,6 +20,9 @@ const Dashboard = () => {
         
         <Link href='/dashboard/partners' className='bg-white text-primary p-2 rounded-lg  flex items-center justify-evenly gap-2'>
          <Handshake/>Partners
+        </Link>
+        <Link href='/dashboard/blogs' className='bg-white text-primary p-2 rounded-lg  flex items-center justify-evenly gap-2'>
+         <ScrollText />Blogs
         </Link>
        
         
