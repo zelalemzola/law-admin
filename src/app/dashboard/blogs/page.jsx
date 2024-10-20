@@ -151,7 +151,7 @@ const Blogs = () => {
                     </div>
                      <label className='text-primary text-lg font-bold'>Date</label>
                     <input
-                      type="date"
+                      type="datetime-local"
                       name="date"
                       value={createFormState.date}
                       onChange={(e) => handleChange(e)}
