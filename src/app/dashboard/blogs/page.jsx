@@ -177,7 +177,7 @@ const Blogs = () => {
           placeholder="Search Blogs"
           value={searchQuery}
           onChange={handleSearch}
-          className="w-1/3"
+          className="w-1/3 rounded-full"
         />
       </div>
       <div className="flex flex-col items-start justify-start  mx-5">
