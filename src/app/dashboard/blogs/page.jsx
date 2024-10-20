@@ -129,7 +129,7 @@ const Blogs = () => {
                   <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
                     <Input name="title" value={createFormState.title} onChange={(e) => handleChange(e)} placeholder="Blog Title" required className='w-full' />
                     <div className='flex items-center justify-start gap-2'>
-                      <h1 className='text-primary font-bold'>Upload Blog's Thumbnail</h1>
+                      <h1 className='text-primary font-bold'>Upload Blog&lsquo;s Thumbnail</h1>
                       <UploadButton
                         className='pt-5 flex'
                         endpoint="imageUploader"
@@ -221,7 +221,7 @@ const Blogs = () => {
                   <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
                     <Input name="title" value={updateFormState.title} onChange={(e) => handleChange(e, true)} placeholder="Blog Title" required className='w-full' />
                     <div className='flex items-center justify-start gap-2'>
-                      <h1 className='text-primary font-bold'>Upload Blog's Thumbnail</h1>
+                      <h1 className='text-primary font-bold'>Upload Blog&lsquo;s Thumbnail</h1>
                       <UploadButton
                         className='pt-5 flex'
                         endpoint="imageUploader"
