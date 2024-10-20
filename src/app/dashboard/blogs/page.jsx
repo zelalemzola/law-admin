@@ -164,6 +164,7 @@ const Blogs = () => {
                       placeholder="Blog Content"
                       required
                       className='w-full '
+                      rows={45}
                     />
                   </div>
                 </ScrollArea> 
@@ -176,7 +177,7 @@ const Blogs = () => {
             </DrawerClose>
           </DrawerContent>
         </Drawer>
-        <div className='flex items-center gap-2 border border-primary p-2 rounded-lg w-[30%]'>
+        <div className='flex items-center gap-2 border border-primary p-2 rounded-full shadow-xl w-[30%]'>
           <Search className='text-primary font-bold'/>
         <input
           type="text"
@@ -226,6 +227,7 @@ const Blogs = () => {
               <div className="flex flex-col items-start gap-3">
                 <ScrollArea className='h-full  w-full bg-white px-4 '>
                   <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
+                    <label className='text-primary text-lg font-bold'>Edit Title</label>
                     <Input name="title" value={updateFormState.title} onChange={(e) => handleChange(e, true)} placeholder="Blog Title" required className='w-full' />
                     <div className='flex items-center justify-start gap-2'>
                       <h1 className='text-primary font-bold'>Upload Blog&lsquo;s Thumbnail</h1>
@@ -245,6 +247,7 @@ const Blogs = () => {
                       />
                     </div>
                     {updateFormState.thumbnailUrl && <Image src={updateFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
+                   <label className='text-primary text-lg font-bold'>Edit Date</label>
                     <Input
                       type="date"
                       name="date"
@@ -252,6 +255,7 @@ const Blogs = () => {
                       onChange={(e) => handleChange(e, true)}
                       className='w-full'
                     />
+                   <label className='text-primary text-lg font-bold'>Edit Content</label>
                     <textarea
                       name="content"
                       value={updateFormState.content}
@@ -262,10 +266,10 @@ const Blogs = () => {
                     />
                   </div>
                 </ScrollArea>
-                <Button type="submit" className='w-1/3 bg-primary'>Update</Button>
+                <Button type="submit" className='w-1/3 bg-orange-500'>Update</Button>
               </div>
             </form>
-            <DrawerClose className='absolute top-5 right-5 hover:shadow-2xl' >
+            <DrawerClose className='absolute top-5 right-5 hover:shadow-2xl ' >
               <CircleX className='text-red-500 text-lg scale-[150%]'/>
             </DrawerClose>
           </DrawerContent>
