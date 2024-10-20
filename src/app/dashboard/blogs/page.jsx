@@ -146,8 +146,9 @@ const Blogs = () => {
                           alert(`ERROR! ${error.message}`);
                         }}
                       />
+                      {createFormState.thumbnailUrl && <Image src={createFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
+
                     </div>
-                    {createFormState.thumbnailUrl && <Image src={createFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
                      <label className='text-primary text-lg font-bold'>Date</label>
                     <Input
                       type="date"
@@ -244,8 +245,9 @@ const Blogs = () => {
                           alert(`ERROR! ${error.message}`);
                         }}
                       />
+                  {updateFormState.thumbnailUrl && <Image src={updateFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
+
                     </div>
-                    {updateFormState.thumbnailUrl && <Image src={updateFormState.thumbnailUrl} className='p-3' width={120} height={150} alt="" />}
                    <label className='text-primary text-lg font-bold'>Edit Date</label>
                     <Input
                       type="date"
@@ -261,7 +263,7 @@ const Blogs = () => {
                       onChange={(e) => handleChange(e, true)}
                       placeholder="Blog Content"
                       required
-                      className='w-full h-48'
+                      className='w-full h-24'
                     />
                   </div>
                 </ScrollArea>
