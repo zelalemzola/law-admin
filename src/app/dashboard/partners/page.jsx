@@ -118,7 +118,7 @@ const Partners = () => {
             </DrawerHeader>
             <form onSubmit={(e) => handleSubmit(e)} className='w-full '>
               <div className="flex flex-col items-start gap-3">
-                <ScrollArea className='h-full px-2 w-full bg-white px-4 '>
+                <ScrollArea className='h-full  w-full bg-white px-4 '>
                   <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
                    <div className="flex flex-col gap-3">
                       <Input name="name" value={createFormState.name} onChange={(e) => handleChange(e)} placeholder="Partner's Name" required className='w-full' />
@@ -194,7 +194,7 @@ const Partners = () => {
                       </DrawerHeader>
                       <form onSubmit={(e) => handleSubmit(e, true)} className='w-full'>
                         <div className="flex flex-col items-start gap-3 relative">
-                          <ScrollArea className='h-full px-2 w-full bg-white px-4 '>
+                          <ScrollArea className='h-full  w-full bg-white px-4 '>
                             <div className="flex flex-col gap-3 h-[380px] text-black pt-2 py-2 px-2 w-full">
                               <div className="flex flex-col gap-3">
                                 <Input name="name" value={updateFormState.name} onChange={(e) => handleChange(e, true)} placeholder="Partner's Name" required className='w-full' />

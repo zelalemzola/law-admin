@@ -126,7 +126,7 @@ const Blogs = () => {
             <form onSubmit={(e) => handleSubmit(e)} className='w-full '>
               <div className="flex flex-col items-start gap-3">
                 <ScrollArea className='h-full  w-full bg-white px-4 '>
-                  <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
+                  <div className="flex flex-col gap-3 h-[85vh] text-black pt-2 py-2 px-2 w-full">
                     <label className='text-primary text-lg font-bold'>Title</label>
                     <Input name="title" value={createFormState.title} onChange={(e) => handleChange(e)} placeholder="Blog Title" required className='w-full' />
                     
@@ -191,7 +191,7 @@ const Blogs = () => {
       <div className="flex flex-col items-start justify-start  mx-5">
         <h1 className="text-3xl mb-5">Blogs</h1>
         <div className="overflow-x-auto w-full mt-[10%]">
-          <table className="table-auto border-collapse w-full">
+          <table className="table-auto border-collapse w-full bg-primary">
             <thead>
               <tr>
                 <th className="border p-2">Title</th>
@@ -225,7 +225,7 @@ const Blogs = () => {
             <form onSubmit={(e) => handleSubmit(e, true)} className='w-full '>
               <div className="flex flex-col items-start gap-3">
                 <ScrollArea className='h-full  w-full bg-white px-4 '>
-                  <div className="flex flex-col gap-3 h-[360px] text-black pt-2 py-2 px-2 w-full">
+                  <div className="flex flex-col gap-3 h-[85vh] text-black pt-2 py-2 px-2 w-full">
                     <label className='text-primary text-lg font-bold'>Edit Title</label>
                     <Input name="title" value={updateFormState.title} onChange={(e) => handleChange(e, true)} placeholder="Blog Title" required className='w-full' />
                     <div className='flex items-center justify-start gap-2'>
